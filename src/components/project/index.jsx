@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import { Fragment } from 'react';
 import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
-import { ga, languageColor, skeleton } from '../../helpers/utils';
+import { languageColor, skeleton } from '../../helpers/utils';
 
-const Project = ({ repo, loading, github, googleAnalytics }) => {
+const Project = ({ repo, loading, github }) => {
   if (!loading && Array.isArray(repo) && repo.length === 0) {
     return <></>;
   }
@@ -68,18 +68,7 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
         onClick={(e) => {
           e.preventDefault();
 
-          try {
-            if (googleAnalytics?.id) {
-              ga.event({
-                action: 'Click project',
-                params: {
-                  project: item.name,
-                },
-              });
-            }
-          } catch (error) {
-            console.error(error);
-          }
+          
 
           window?.open(item.html_url, '_blank');
         }}
@@ -87,7 +76,7 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
         <div className="flex justify-between flex-col p-8 h-full w-full">
           <div>
             <div className="flex items-center">
-              <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
+              <div className="card-title text-lg tracking-wide flex text-base-content opacity-90">
                 <MdInsertLink className="my-auto" />
                 <span>{item.name}</span>
               </div>
@@ -96,7 +85,7 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
               {item.description}
             </p>
           </div>
-          <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
+          <div className="flex justify-between text-sm text-base-content text-opacity-90 truncate">
             <div className="flex flex-grow">
               <span className="mr-3 flex items-center">
                 <AiOutlineStar className="mr-0.5" />
@@ -110,7 +99,7 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
             <div>
               <span className="flex items-center">
                 <div
-                  className="w-3 h-3 rounded-full mr-1 opacity-60"
+                  className="w-3 h-3 rounded-full mr-1"
                   style={{ backgroundColor: languageColor(item.language) }}
                 />
                 <span>{item.language}</span>
@@ -134,8 +123,8 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
                     {loading ? (
                       skeleton({ width: 'w-40', height: 'h-8' })
                     ) : (
-                      <span className="text-base-content opacity-70">
-                        GitHub Projects
+                      <span className="text-base-content opacity-80">
+                        Projects
                       </span>
                     )}
                   </h5>
@@ -170,7 +159,7 @@ Project.propTypes = {
   repo: PropTypes.array,
   loading: PropTypes.bool.isRequired,
   github: PropTypes.object.isRequired,
-  googleAnalytics: PropTypes.object.isRequired,
+  
 };
 
 export default Project;

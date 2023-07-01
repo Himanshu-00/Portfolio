@@ -1,8 +1,8 @@
-import config from '../gitprofile.config';
-import GitProfile from './components/GitProfile';
+import config from '../github.config';
+import Profile from './components/Profile';
 
 function App() {
-  return <GitProfile config={config} />;
+  return <Profile config={config} />;
 }
 
 export default App;

@@ -5,7 +5,7 @@ import autoprefixer from 'autoprefixer';
 import tailwindConfig from './tailwind.config.mjs';
 import path from 'path';
 
-// https://vitejs.dev/config/
+
 export default defineConfig({
   plugins: [react()],
   css: {
@@ -15,9 +15,9 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/components/GitProfile.jsx'),
-      name: 'GitProfile',
-      fileName: (format) => `gitprofile.${format}.js`,
+      entry: path.resolve(__dirname, 'src/components/Profile.jsx'),
+      name: 'Profile',
+      fileName: (format) => `profile.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

@@ -1,4 +1,4 @@
-import config from './gitprofile.config';
+import config from './github.config';
 
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
