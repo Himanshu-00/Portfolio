@@ -4,9 +4,7 @@ src
 .eslintrc.js
 .prettierignore
 .prettierrc
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
-gitprofile.config.js
+github.config.js
 index.html
 library.config.js
 tailwind.config.mjs

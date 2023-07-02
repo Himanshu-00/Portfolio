@@ -85,8 +85,6 @@ export interface Config {
    */
   github: Github;
 
-  
-  // social?: Social;
 
   /*
    * Resume
