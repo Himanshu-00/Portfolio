@@ -135,12 +135,7 @@ const Profile = ({ config }) => {
   return (
     <HelmetProvider>
       {palatableConfig && (
-        <HeadTagEditor
-          profile={profile}
-          theme={theme}
-          
-          social={palatableConfig.social}
-        />
+        <HeadTagEditor/>
       )}
       <div className="fade-in h-screen">
         {error ? (
@@ -164,6 +159,7 @@ const Profile = ({ config }) => {
                         avatarRing={!palatableConfig.themeConfig.hideAvatarRing}
                         resume={palatableConfig.resume}
                         resume2={palatableConfig.resume2}
+                        social={palatableConfig.social}
                       />
                      
                       <Skill
