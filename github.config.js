@@ -22,7 +22,7 @@ const config = {
 
   skills: [
     'Swift',
-    'React',
+    'Flutter',
     'Javascript',
     'C++',
     'ReactJs',
