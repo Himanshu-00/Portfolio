@@ -17,9 +17,10 @@ const AboutMe = () => {
   <div className="card-body lg:text-lg text-xs">
     <p className='font-bold'>Vinchurkar Himanshu is a dedicated and ambitious software engineering student with a passion for technology and problem-solving. He excels in programming languages such as C++, and Python and actively seeks practical experience through internships. Himanshu is driven to develop innovative software solutions that improve user experiences and is committed to continuous learning and staying up to date with industry trends. His strong work ethic and motivation make him an ideal candidate for any organization seeking a talented software engineer.
     </p>
-    <p className='hover:underline lg:text-sm font-bold cursor-pointer'><a href='https://www.linkedin.com/in/himanshu-vinchurkar-9b414322b/' target={'_blank'}>DMs are alway's open on Linkedin</a>
+    <a href='https://www.linkedin.com/in/himanshu-vinchurkar-9b414322b/' target={'_blank'}>
+    <p className='hover:underline lg:text-sm font-bold cursor-pointer'>DMs are alway's open on Linkedin
     
-    </p>
+    </p></a>
     </div>
 </div>
 
