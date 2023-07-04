@@ -61,8 +61,8 @@ const AvatarCard = ({ profile, loading, avatarRing, resume, resume2 }) => {
             <a
               href={resume.fileUrl}
               target="_blank"
-              className="btn btn-outline btn-sm text-xs mt-6 opacity-70"
-              ><FaLinkedin/>
+              className="btn btn-outline btn-sm text-sm mt-6 opacity-70 rounded-full"
+              ><FaLinkedin size={20}/>
               Linkdin
             </a>
             
@@ -78,8 +78,8 @@ const AvatarCard = ({ profile, loading, avatarRing, resume, resume2 }) => {
             <a
               href={resume2.fileUrl}
               target="_blank" //Will open target in New Tab
-              className="btn btn-outline btn-sm text-xs mt-6 opacity-70"
-              ><AiFillGithub/>
+              className="btn btn-outline btn-sm text-sm mt-6 opacity-70 rounded-full"
+              ><AiFillGithub size={20}/>
               GitHub
             </a>
             

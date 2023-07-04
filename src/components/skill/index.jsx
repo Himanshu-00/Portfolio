@@ -25,20 +25,20 @@ const Skill = ({ loading, skills }) => {
                 {loading ? (
                   skeleton({ width: 'w-32', height: 'h-8' })
                 ) : (
-                  <span className="text-base-content opacity-80 text-lg">
+                  <span className="text-base-content opacity-80 text-lg mt-1 font-bold">
                     Skills
                   </span>
                 )}
               </h5>
             </div>
             <div className="p-3 flow-root">
-              <div className="-m-1 flex flex-wrap justify-start mx-1">
+              <div className="-m-1 flex flex-wrap justify-start ">
                 {loading
                   ? renderSkeleton()
                   : skills.map((skill, index) => (
                       <div
                         key={index}
-                        className="m-1 text-xs inline-flex items-center font-bold leading-xs px-3 py-3 badge badge-primary rounded-full"
+                        className="m-1.5 text-xs inline-flex items-center font-bold leading-xs px-3 py-3 badge badge-primary"
                       >
                         {skill}
                       </div>

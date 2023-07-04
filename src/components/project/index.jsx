@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
-import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
+import {AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
 import { languageColor, skeleton } from '../../helpers/utils';
+import {DiGithubFull} from 'react-icons/di'
+
 
 const Project = ({ repo, loading, github }) => {
   if (!loading && Array.isArray(repo) && repo.length === 0) {
@@ -62,7 +64,7 @@ const Project = ({ repo, loading, github }) => {
   const renderProjects = () => {
     return repo.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="card shadow-lg compact bg-base-100 cursor-pointer border-primary hover:border"
         href={item.html_url}
         key={index}
         onClick={(e) => {
@@ -123,7 +125,8 @@ const Project = ({ repo, loading, github }) => {
                     {loading ? (
                       skeleton({ width: 'w-40', height: 'h-8' })
                     ) : (
-                      <span className="text-base-content opacity-80">
+                      <span className="text-base-content opacity-80 mb-2">
+                        <DiGithubFull className='-mb-2' size={45}/>
                         Projects
                       </span>
                     )}

@@ -4,18 +4,21 @@ const AboutMe = () => {
   return (
     <div className="card  bg-base-100 shadow-lg bg-opacity-40">
               <div className="card-body">
-                <div className="mx-1 flex items-center justify-between mb-2 py-2">
+                <div className="mx-1 flex justify-between mb-2 py-2">
                   <h5 className="card-title">
                     {
-                      <span className="text-base-content opacity-80">
+                      <span className="text-base-content opacity-80 lg:mx-2 -mx-3">
                         Bio
                       </span>
                     }
                   </h5>
                   { 
                   <div className="card w-5/6 bg-primary text-primary-content shadow-xl pb-7">
-  <div className="card-body items-center text-center lg:text-lg text-xs">
-    <p className='font-bold'>Highly skilled and adaptable Software Engineer with years of experience in designing and developing robust software solutions. Proficient in multiple programming languages and frameworks, with a strong foundation in software development methodologies and best practices. Passionate about creating efficient and scalable code, improving user experiences, and solving complex technical challenges. Excellent problem-solving abilities and a collaborative mindset, consistently delivering high-quality results in fast-paced environments. Seeking an opportunity to contribute to cutting-edge projects and drive innovation in software engineering.
+  <div className="card-body lg:text-lg text-xs">
+    <p className='font-bold'>Vinchurkar Himanshu is a dedicated and ambitious software engineering student with a passion for technology and problem-solving. He excels in programming languages such as C++, and Python and actively seeks practical experience through internships. Himanshu is driven to develop innovative software solutions that improve user experiences and is committed to continuous learning and staying up to date with industry trends. His strong work ethic and motivation make him an ideal candidate for any organization seeking a talented software engineer.
+    </p>
+    <p className='hover:underline lg:text-sm font-bold'>DMs are alway's open on 
+    <a href='https://www.linkedin.com/in/himanshu-vinchurkar-9b414322b/'> Linkedin</a>
     </p>
     </div>
 </div>

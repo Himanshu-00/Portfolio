@@ -1,4 +1,4 @@
-import { AiOutlineControl } from 'react-icons/ai';
+import { LuSettings2 } from 'react-icons/lu';
 import { skeleton } from '../../helpers/utils';
 import PropTypes from 'prop-types';
 
@@ -30,7 +30,7 @@ const ThemeChanger = ({ theme, setTheme, loading, themeConfig }) => {
                 tabIndex={0}
                 className="btn btn-ghost m-1 normal-case opacity-50 text-base-content"
               >
-                <AiOutlineControl className="inline-block w-5 h-5 stroke-current md:mr-2" />
+                <LuSettings2 className="inline-block w-5 h-5 stroke-current md:mr-2" />
                 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const ThemeChanger = ({ theme, setTheme, loading, themeConfig }) => {
                     ),
                   ].map((item, index) => (
                     <li key={index}>
-                      {/* eslint-disable-next-line */}
+                      
                       <a
                         onClick={(e) => changeTheme(e, item)}
                         className={`${theme === item ? 'active' : ''}`}

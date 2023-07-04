@@ -159,7 +159,6 @@ const Profile = ({ config }) => {
                         avatarRing={!palatableConfig.themeConfig.hideAvatarRing}
                         resume={palatableConfig.resume}
                         resume2={palatableConfig.resume2}
-                        social={palatableConfig.social}
                       />
                      
                       <Skill
