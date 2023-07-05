@@ -83,7 +83,7 @@ const Project = ({ repo, loading, github }) => {
                 <span>{item.name}</span>
               </div>
             </div>
-            <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm">
+            <p className="mb-5 mt-4 text-base-content text-opacity-60 text-sm">
               {item.description}
             </p>
           </div>
