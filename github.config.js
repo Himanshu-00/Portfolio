@@ -33,7 +33,7 @@ const config = {
   
   
   themeConfig: {
-    defaultTheme: 'aqua',
+    defaultTheme: 'Coffee',
     
 
     // Available themes. To remove any theme, exclude from here.
