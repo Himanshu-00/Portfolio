@@ -97,7 +97,6 @@ const MainProfile = ({ config }: { config: Config }) => {
         name: data.name || ' ',
         bio: data.bio || '',
         location: data.location || '',
-        company: data.company || '',
       });
 
       if (!sanitizedConfig.projects.github.display) {

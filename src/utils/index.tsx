@@ -87,7 +87,7 @@ export const getSanitizedConfig = (
             DEFAULT_CUSTOM_THEME['--rounded-btn'],
         },
       },
-      footer: config?.footer,
+   
       enablePWA: config?.enablePWA ?? true,
     };
   } catch (error) {
