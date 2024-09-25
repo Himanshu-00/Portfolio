@@ -34,7 +34,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1ajOKeIn8pe0Mi-nv5oiCe9tqRkqUx6ay/view?usp=sharing',
+      'https://drive.google.com/file/d/1Gd2hP1wUCWHcxrSzKZzGSi_INpbdfrMS/view?usp=sharing',
   },
   skills: [
     'Swift',
