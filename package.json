@@ -1,16 +1,16 @@
 {
-  "name": "@arifszn/gitprofile",
+  "name": "@Himanshu-00/Profile",
   "description": "Create an automatic portfolio based on GitHub profile",
-  "version": "3.1.0",
+  "version": "1.0",
   "type": "module",
   "license": "MIT",
-  "author": "arifszn",
+  "author": "Himanshu",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arifszn/gitprofile.git"
+    "url": "https://github.com/Himanshu-00/Portfolio"
   },
   "bugs": {
-    "url": "https://github.com/arifszn/gitprofile/issues"
+    "url": "https://github.com/Himanshu-00/Portfolio/issues"
   },
   "scripts": {
     "dev": "vite",
@@ -54,7 +54,7 @@
     "vite-plugin-pwa": "^0.20.0"
   },
   "keywords": [
-    "git-profile",
+    "git-profolio",
     "gitprofile",
     "gitportfolio",
     "personal-site",

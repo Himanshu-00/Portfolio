@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedin } from 'react-icons/fa';
-import { RiMailFill, RiPhoneFill } from 'react-icons/ri';
+import { RiMailSendFill, RiPhoneFill } from 'react-icons/ri';
 import { Profile } from '../../interfaces/profile';
 import {
   SanitizedGithub,
@@ -29,7 +29,7 @@ const ListItem: React.FC<{
   border?: boolean;
 }> = ({ icon, title, value, link, skeleton = false, border = false }) => {
   return (
-    <div className={`flex font-bold justify-start py-2 px-2 items-center text-black ${border ? 'border border-primary bg-primary bg-opacity-90 p-2 rounded-lg  transition duration-300 hover:bg-orange-200 hover:scale-105' : ''} my-4`}>
+    <div className={`flex font-bold justify-start py-2 px-2 items-center text-black ${border ? 'border border-primary bg-primary bg-opacity-90 p-2 rounded-xl  transition duration-300 hover:bg-orange-200 hover:scale-105' : ''} my-4`}>
       <div className="flex-grow gap-2 flex items-center my-1">
         {icon} {title}
       </div>
@@ -86,7 +86,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
              
               
               <ListItem
-                icon={<AiFillGithub />}
+                icon={<AiFillGithub className='w-8 h-8'/>}
                 title="GitHub:"
                 value={github.username}
                 link={`https://github.com/${github.username}`}
@@ -96,7 +96,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               
               {social?.linkedin && (
                 <ListItem
-                  icon={<FaLinkedin />}
+                  icon={<FaLinkedin className='w-8 h-8'/>}
                   title="LinkedIn:"
                   value={"Himanshu Vinchurkar"}
                   link={`https://www.linkedin.com/in/${social.linkedin}`}
@@ -106,7 +106,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               
               {social?.phone && (
                 <ListItem
-                  icon={<RiPhoneFill />}
+                  icon={<RiPhoneFill className='w-8 h-8'/>}
                   title="Phone:"
                   value={social.phone}
                   link={`tel:${social.phone}`}
@@ -115,7 +115,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               )}
               {social?.email && (
                 <ListItem
-                  icon={<RiMailFill />}
+                  icon={<RiMailSendFill className='w-8 h-8'/>}
                   title="Email:"
                   value={social.email}
                   link={`mailto:${social.email}`}
