@@ -18,7 +18,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   resumeFileUrl,
 }): JSX.Element => {
   return (
-    <div className="card shadow-lg compact bg-base-100">
+    <div className="card rounded-[40px] shadow-lg compact bg-base-100">
       <div className="grid place-items-center py-8">
         {loading || !profile ? (
           <div className="avatar opacity-90">

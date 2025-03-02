@@ -1,6 +1,6 @@
 {
-  "name": "@Himanshu-00/Profile",
-  "description": "Create an automatic portfolio based on GitHub profile",
+  "name": "@Himanshu-00/Portfolio",
+  "description": "Automatic portfolio based on GitHub profile",
   "version": "1.0",
   "type": "module",
   "license": "MIT",

@@ -29,14 +29,14 @@ const ListItem: React.FC<{
   border?: boolean;
 }> = ({ icon, title, value, link, skeleton = false, border = false }) => {
   return (
-    <div className={`flex font-bold justify-start py-2 px-2 items-center text-black ${border ? 'border border-primary bg-primary bg-opacity-90 p-2 rounded-xl  transition duration-300 hover:bg-orange-200 hover:scale-105' : ''} my-4`}>
+    <div className={`flex font-bold justify-start py-2 px-2 items-center text-black ${border ? 'border border-primary bg-primary bg-opacity-90 p-2 rounded-2xl  transition duration-300 hover:bg-orange-200 hover:scale-105' : ''} my-4`}>
       <div className="flex-grow gap-2 flex items-center my-1">
         {icon} {title}
       </div>
       <div
         className={`${
           skeleton ? 'flex-grow' : ''
-        } text-sm font-medium text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
+        } text-sm font-bold text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
         style={{
           wordBreak: 'break-word',
         }}
@@ -76,7 +76,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
   };
 
   return (
-    <div className="card shadow-lg compact bg-base-100">
+    <div className="card shadow-lg compact bg-base-100 rounded-[40px]">
       <div className="card-body">
         <div className="text-base-content text-opacity-60">
           {loading || !profile ? (

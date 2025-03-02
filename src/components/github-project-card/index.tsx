@@ -74,7 +74,7 @@ const GithubProjectCard = ({
   const renderProjects = () => {
     return githubProjects.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="card rounded-[30px] shadow-lg compact bg-base-100 cursor-pointer hover:bg-base-300 hover:shadow-none"
         href={item.html_url}
         key={index}
         onClick={(e) => {
@@ -132,9 +132,9 @@ const GithubProjectCard = ({
       <div className="col-span-1 lg:col-span-2">
         <div className="grid grid-cols-2 gap-6">
           <div className="col-span-2">
-            <div className="card compact bg-base-100 shadow bg-opacity-40">
+            <div className="card rounded-[40px] compact bg-base-100 shadow bg-opacity-40">
               <div className="card-body">
-                <div className="mx-3 flex items-center justify-between mb-2">
+                <div className="mx-3 flex items-center justify-between mb-1">
                   <h5 className="card-title">
                     {loading ? (
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
