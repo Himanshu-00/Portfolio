@@ -21,7 +21,7 @@ const SkillCard = ({
   };
 
   return (
-    <div className="card rounded-[30px] shadow-lg compact bg-base-100">
+    <div className="card rounded-[45px] shadow-lg compact bg-base-100">
       <div className="card-body">
         <div className="mx-3">
           <h5 className="card-title">

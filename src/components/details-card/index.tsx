@@ -76,7 +76,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
   };
 
   return (
-    <div className="card shadow-lg compact bg-base-100 rounded-[40px]">
+    <div className="card shadow-lg compact bg-base-100 rounded-[45px]">
       <div className="card-body">
         <div className="text-base-content text-opacity-60">
           {loading || !profile ? (

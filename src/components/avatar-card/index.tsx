@@ -18,7 +18,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   resumeFileUrl,
 }): JSX.Element => {
   return (
-    <div className="card rounded-[40px] shadow-lg compact bg-base-100">
+    <div className="card rounded-[45px] shadow-lg compact bg-base-100">
       <div className="grid place-items-center py-8">
         {loading || !profile ? (
           <div className="avatar opacity-90">
@@ -33,7 +33,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
         ) : (
           <div className="avatar opacity-90">
             <div
-              className={`mb-8 rounded-[40px] w-40 h-40 ${
+              className={`mb-8 rounded-[50px] w-40 h-40 ${
                 avatarRing
                   ? 'ring ring-primary ring-offset-base-100 ring-offset-2 ring-4'
                   : ''
